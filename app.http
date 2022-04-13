@@ -1,0 +1,44 @@
+
+// Get Players API 1
+
+###
+GET http://localhost:3000/players/
+
+// Get a Player based on id API 2
+
+###
+GET http://localhost:3000/players/5/
+
+//Updates the details of a specific player based on the player ID API 3
+
+###
+PUT http://localhost:3000/players/5/
+Content-Type: application/json
+
+{
+  "playerName": "Raju"
+}
+
+// Get a Match Details based on id API 4
+
+###
+GET http://localhost:3000/matches/6/
+
+
+//Get a list of all the matches of a player API 5
+
+###
+GET http://localhost:3000/players/6/matches
+
+// Get a list of players of a specific match API 6
+
+###
+GET http://localhost:3000/matches/7/players
+
+//Get a statistics of the total score, fours, sixes
+// of a specific player based on the player ID API 7
+
+###
+GET http://localhost:3000/players/8/playerScores
+
+
